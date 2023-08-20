@@ -8,7 +8,8 @@ export default function App() {
   const [isMessageSent, setIsMessageSent] = useState(false);
   const [latestMessage, setLatestMessage] = useState();
 
-  const API = 'https://ceua9.ciroue.com/api';
+  // const API = 'https://ceua9.ciroue.com/api'; // PHP Sandbox
+  const API = 'http://localhost:8000/api'; // Localhost
 
   useEffect(() => {
     console.log("username: ", username);
